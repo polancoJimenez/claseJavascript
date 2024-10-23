@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>prueba de javascript</title>
 </head>
+
 <body>
     <script>
-        console.log ("prueba de output");
-        document.write ("prueba");
+        var variableGlobal = "Soy una variable global";
+        function miFuncion() {
+            console.log(variableGlobal);
+        }
+        miFuncion(); // Salida: Soy una variable global
+        console.log(variableGlobal); // Salida: Soy una variable global 
+
+        //primitivos
+        let edad = 30;
+        let temperatura = 36.5;
+        console.log(edad);
+        console.log(temperatura);
+
+        //string (secuencia de caracteres)
+        let nombre = "juan";
+        let saludo = "hola, como estas?";
+        console.log(nombre);
+        console.log(saludo);
+
+        let nombre2 = {
+            name: "ana",
+            edad: 25,
+            estudiante: true
+        };
+        console.log(nombre2);
+        console.log(nombre2.name);
+
+        let numeros = [1,2,3,4,5];
+        console.log(numeros);
+
+        let fechaActual = new Date();
+        console.log(fechaActual);
+
+        let age = 10;
+        let mensaje = (age >= 18)?"eres mayor":"eres menor";
+        console.log(mensaje);
+
+        let x =(1+2, +4);
+        console.log(x);
     </script>
 </body>
 </html>
